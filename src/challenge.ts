@@ -5,12 +5,13 @@ const prettyPrintWilder = (users:User[]) => {
     });
     console.log("########################");
 };
+
 interface User{
     name:string;
     age?:number;
     birthday?:string;
 }
-const wilders = [];
+const wilders: User[] = [];
 const user1 = { name: "Pierre", age: 23 };
 const user2 = { name: "Paul", birthday: "10/02/1990" };
 const user3 = { name: "Jacques", age: 25 };
